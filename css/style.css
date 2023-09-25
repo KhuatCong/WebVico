@@ -53,3 +53,173 @@ html{
 .nav-header a:hover{
     color:chartreuse;
 }
+.nav-link{
+    padding: 8px 0;
+}
+.content-category{
+    margin-top: 10px;
+    height: 100%;
+}
+
+.title-category{
+    border: 1px solid #ADADAD;
+    padding: 10px;
+    background-color: #f28f3c;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.list-category{
+    display: flex;
+    flex-direction: column;
+}
+.item-category{
+    border-bottom: 1px solid #ADADAD;
+    border-left: 1px solid #ADADAD;
+    border-right: 1px solid #ADADAD;
+}
+.list-category a{
+    text-decoration: none;
+    color: #ADADAD;
+    padding: 10px;
+}
+.list-category a:hover{
+    color: #f28f3c;
+    background-color: antiquewhite;
+}
+.slide-banner{
+    margin-top: 10px;
+    height: 100%;
+}
+
+.item-slide{
+    height: 314px;
+}
+.item-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+.des-gioithieu-home{
+    align-items: center;
+    height: 100%;
+}
+.gioithieu-home h3{
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+    position: relative;
+}
+.title-new-product h3{
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+    position: relative;
+}
+.title-new-product h3::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    background-color: #f28f3c;
+    width: 20%;
+    height: 2px;
+}
+.gioithieu-home h3::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    background-color: #f28f3c;
+    width: 20%;
+    height: 2px;
+}
+.img-des-gioithieu video{
+    width: 100%;
+    border-radius: 15px;
+}
+.bt{
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+.text-des-gioithieu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.text-gioithieu{
+    text-align: justify;
+}
+.button-docthem a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-header{
+    position: sticky;
+    top: 0;
+}
+
+.card-body a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+}
+.title-gioithieu{
+    padding: 10px 0;
+}
+.bt{
+    background-color: #f28f3c;
+    padding: 5px 10px;
+}
+.card{
+    margin: 0 10px;
+    border-radius: 0;
+    position: relative;
+}
+.card-body p{
+    color: red;
+}
+.card-body del{
+    color: gray;
+}
+.text-new{
+    background-color: red;
+    color: white;
+    display: inline-block;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 3px 8px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.list-new-product{
+    position: relative;
+}
+.slick-prev{
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 30px;
+    color: #9c9c9c;
+}
+.slick-next{
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 30px;
+    color: #888888;
+}
