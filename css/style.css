@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:'Times New Roman';
+}
+.contact-header{
+    background-color: #EEEEEE;
+    color: #888888;
+    font-size: 14px;
+}
+.right-header-contact i{
+    margin-right: 15px;
+}
+.input-search-header .btn{
+    background-color: #CCFFFF;
+}
+.icon-hotline-header{
+    background-color: red;
+    border-radius: 20px;
+    display: inline-block;
+    color: white;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+.input-search-header{
+    max-width: 60%;
+    flex: 1;
+}
+.search-header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+.right-hotline-header{
+    display: flex;
+    align-items: center;
+}
+.location-header{
+    margin-right: 20px;
+    font-size: 14px;
+}
+.nav-header{
+    background-color: #f28f3c;
+}
+.nav-header a{
+    color: white;
+    text-transform: uppercase;
+}
+.nav-header a:hover{
+    color:chartreuse;
+}
