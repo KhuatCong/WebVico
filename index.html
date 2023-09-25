@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/slick/slick.css">
+    <link rel="stylesheet" href="asset/slick/slick.css">
+</head>
+
+<body>
+
+    <div class="slide">
+        <div class="container">
+            <div class="myslide" style="height: 200px;">
+                <div class="img" style="height: 200px; object-fit: cover;">
+                    <img src="asset/img/slide_1.jpg" width="auto" height="100%" alt="">
+                </div>
+                <div class="img" style="height: 200px; object-fit: cover;">
+                    <img src="asset/img/slide_2.jpg" width="auto" height="100%" alt="">
+                </div>
+                <div class="img" style="height: 200px; object-fit: cover;">
+                    <img src="asset/img/slide_3.jpg" width="auto" height="100%" alt="">
+                </div>
+                <div class="img" style="height: 200px; object-fit: cover;">
+                    <img src="asset/img/slide_4.jpg" width="auto" height="100%" alt="">
+                </div>
+                <div class="img" style="height: 200px; object-fit: cover;">
+                    <img src="asset/img/slide_5.jpg" width="auto" height="100%" alt="">
+                </div>
+                <div class="img" style="height: 200px; object-fit: cover;">
+                    <img src="asset/img/slide_6.jpg" width="auto" height="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/slick/slick.min.js"></script>
+
+    <script>
+        $(function () {
+            $('.myslide').slick({
+                slidesToShow:3,
+            });
+        })
+    </script>
+</body>
+
+</html>
