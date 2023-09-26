@@ -73,6 +73,64 @@ $(function () {
         ]
     });
 
+    $('.list-like-product').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: true,
+        // autoplay: true,
+        autoplaySpeed: 1000,
+        speed: 500,
+        prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+        nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                    prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+                    nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                    prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+                    nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                }
+            }
+
+        ]
+    });
+
     $('.list-danhmuc-sanpham').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -139,4 +197,20 @@ $(function () {
         nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
         centerMode:true,
     });
+
+    $('.img-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.list-img-nav',
+        draggable: false,
+      });
+
+      $('.list-img-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.img-for',
+        focusOnSelect: true,
+        vertical:true,
+      });
 })
