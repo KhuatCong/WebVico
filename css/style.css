@@ -32,7 +32,7 @@ html {
 }
 
 .input-search-header {
-    max-width: 60%;
+    max-width: 50%;
     flex: 1;
 }
 
@@ -54,8 +54,11 @@ html {
 }
 
 .nav-header {
-
+    position: sticky;
+    top: 0;
+    left: 0;
     background-color: #f28f3c;
+    z-index: 9;
 }
 
 .nav-header a {
@@ -68,7 +71,7 @@ html {
 }
 
 .nav-link {
-    padding: 8px 0;
+    padding: 12px 0;
     position: relative;
 }
 
@@ -194,10 +197,7 @@ html {
     text-transform: uppercase;
 }
 
-.nav-header {
-    position: sticky;
-    top: 0;
-}
+
 
 .card-body a {
     text-decoration: none;
@@ -412,6 +412,11 @@ html {
 
 .list-doitac {
     margin-bottom: 50px;
+}
+
+.list-img-doitac{
+    display: flex;
+    justify-content: center;
 }
 
 .footer {
@@ -688,13 +693,74 @@ ul {
     left: 0;
     right: 0;
     height: 2px;
-    background-color: #3cefff;
+    background-color: chartreuse;
     transform-origin: bottom right;
     transform: scaleX(0);
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
 }
 
 .nav-header .nav-link:hover::before {
     transform-origin: bottom left;
     transform: scaleX(1);
+}
+
+.name-kinhnghiem a {
+    text-decoration: none;
+    color: black;
+}
+
+.name-kinhnghiem a:hover {
+    color: #f28f3c;
+}
+
+.card-body a:hover {
+    color: #f28f3c;
+}
+
+.active-nav {
+    color: chartreuse;
+    border-bottom: 1px sokid chartreuse;
+}
+.bar-mobile{
+    display: none;
+}
+.nav-mobile{
+    background-color: #f28f3c;
+    width: 0;
+    height: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.list-nav-mobile{
+    display: flex;
+    flex-direction: column;
+}
+.list-nav-mobile a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.danhmuc-mobile{
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.list-danhmuc-mobile{
+    display: flex;
+    flex-direction: column;
+}
+.item-danhmuc{
+    border: 1px solid #9c9c9c;
+}
+.list-danhmuc-mobile a:hover{
+    background-color: rgb(166, 166, 166);
+}
+.list-nav-mobile i{
+    margin-top: 30px;
+    margin-left: 30px;
 }

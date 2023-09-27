@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="asset/slick/slick.css">
     <link rel="stylesheet" href="asset/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -52,7 +53,9 @@
                 <div class="search-header-flex">
                     <!-- logo header -->
                     <div class="logo-header">
-                        <img src="asset/img/logo-header.png" alt="">
+                        <a href="index.html">
+                            <img src="asset/img/logo-header.png" alt="">
+                        </a>
                     </div>
                     <!-- input search header -->
                     <div class="input-search-header">
@@ -89,35 +92,65 @@
                 </div>
             </div>
         </div>
-        <div class="nav-header">
-            <div class="container">
-                <ul class="nav justify-content-between">
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Đại lý/Nhà phân khối</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Chính sách chung</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Liên hệ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hướng dẫn đặt hàng</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kinh nghiệm mang thai và nuôi con</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </header>
+    <div class="nav-header">
+        <div class="container">
+            <div class="bar-mobile">
+                <i onclick="openNav()" id="bar-mobile" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
+            
+            <ul class="nav justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kinhnghiem.html">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Đại lý/Nhà phân khối</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Chính sách chung</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hướng dẫn đặt hàng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kinh nghiệm mang thai và nuôi con</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- menu mobile -->
+    <div id="nav-mobile" class="nav-mobile">
+        <div class="list-nav-mobile">
+            <i onclick="closeNav()" id="close-menu" class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+            <a href="index.html" class="item-nav-mobile">Trang chủ</a>
+            <div class="danhmuc-mobile">
+                <div id="title-mobile" class="title-mobile" >
+                    Danh mục sản phẩm
+                </div>
+                <div id="menuCollapseMobile" class="list-danhmuc-mobile ">
+                    <a href="" class="item-danhmuc">Máy hút sữa rảnh tay Imani</a>
+                    <a href="" class="item-danhmuc">Phụ kiện máy hút sữa Imani</a>
+                    <a href="" class="item-danhmuc">Đồ ăn dặm cho bé</a>
+                    <a href="" class="item-danhmuc">Sữa tắm cho bé</a>
+                    <a href="" class="item-danhmuc">Đệm giảm size</a>
+                    <a href="" class="item-danhmuc">Kem chống hăm</a>
+                </div>
 
+            </div>
+            <a href="kinhnghiem.html" class="item-nav-mobile">Giới thiệu</a>
+            <a href="" class="item-nav-mobile">Đại lý/ Nhà phân khối</a>
+            <a href="" class="item-nav-mobile">Chính sách chung</a>
+            <a href="" class="item-nav-mobile">Liên hệ</a>
+            <a href="" class="item-nav-mobile">Hướng dẫn đặt hàng</a>
+            <a href="" class="item-nav-mobile">Kinh nghiệm mang thai và nuôi con</a>
+        </div>
+    </div>
     <section class="content">
         <div class="container">
             <!-- category slide content -->
@@ -131,7 +164,7 @@
                                 sản phẩm
                             </div>
                             <div class="list-category">
-                                <a class="item-category" href="">Máy hút sữa rảnh tay Imani</a>
+                                <a class="item-category" href="all-product.html">Máy hút sữa rảnh tay Imani</a>
                                 <a class="item-category" href="">Phụ kiệ mMáy hút sữa Imani</a>
                                 <a class="item-category" href="">Đồ ăn dặm cho bé</a>
                                 <a class="item-category" href="">Sữa tắm cho bé</a>
@@ -483,23 +516,26 @@
                 <div class="title-new-product">
                     <h3>Đối tác của chúng tôi</h3>
                 </div>
-                <div class="row row-cols-5">
-                    <div class="col">
-                        <img src="asset/img/doitac/doitac1.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="asset/img/doitac/doitac2.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="asset/img/doitac/doitac3.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="asset/img/doitac/doitac4.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="asset/img/doitac/doitac5.png" alt="">
+                <div class="list-img-doitac">
+                    <div class="row row-cols-auto">
+                        <div class="col">
+                            <img src="asset/img/doitac/doitac1.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="asset/img/doitac/doitac2.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="asset/img/doitac/doitac3.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="asset/img/doitac/doitac4.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img src="asset/img/doitac/doitac5.png" alt="">
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -508,7 +544,9 @@
         <div class="footer">
             <div class="container">
                 <div class="logo-footer">
-                    <img src="asset/img/logo-header.png" alt="">
+                    <a href="index.html">
+                        <img src="asset/img/logo-header.png" alt="">
+                    </a>
                 </div>
                 <div class="list-footer">
                     <div class="row">
@@ -566,7 +604,9 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="fanpage-footer">
                                 <h4>Fanpage</h4>
-                                <img src="asset/img/fanpage.png" style="width: auto;" alt="">
+                                <a href="https://vicogroup.vn/">
+                                    <img src="asset/img/fanpage.png" style="width: auto;" alt="">
+                                </a>
                                 <p>Liên kết mạng xã hội</p>
                                 <div class="list-mxh">
                                     <i class="fa-brands fa-square-facebook" style="color: #f28f3c;"></i>
