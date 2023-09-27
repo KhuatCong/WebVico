@@ -231,12 +231,16 @@ html {
     background-color: red;
     color: white;
     display: inline-block;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
     padding: 3px 8px;
     position: absolute;
-    top: 10px;
-    left: 0;
+    top: 0px;
+    right: 15px;
+    clip-path: polygon(0 0,
+    100% 0,
+    100% 100%,
+    49% 85%,
+    50% 85%,
+    0 100%);
 }
 
 .list-new-product {
